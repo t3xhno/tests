@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+    background: #333;
+
+    .success {
+        color: green;
+    }
+    .warning {
+        color: orange;
+    }
+    .error {
+        color: red;
+    }
+}

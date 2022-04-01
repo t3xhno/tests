@@ -1,26 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <app-message variant="success" />
+  <app-form />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import AppForm from "@/components/AppForm.vue";
+import AppMessage from "@/components/AppMessage";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    AppForm,
+    AppMessage,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" src="@/assets/styles/base.scss" />
